@@ -1,0 +1,5 @@
+To create the database tables, run:
+source sql/create_tables.sql;
+
+To insert sample data:
+source sql/insert_data.sql;
