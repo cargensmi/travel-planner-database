@@ -272,8 +272,6 @@ VALUES
 -- ================================
 INSERT INTO ACTIVITY (trip_id, activity_date, location, cost, category)
 VALUES
-INSERT INTO ACTIVITY (trip_id, activity_date, location, cost, category)
-VALUES
 -- Trip 1: Hawaii Vacation (Honolulu)
 (1,'2025-01-10','Beach Walk',0.00,'Relaxation'),
 (1,'2025-01-11','City Museum',15.00,'Culture'),
