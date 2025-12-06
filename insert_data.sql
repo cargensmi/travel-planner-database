@@ -1,5 +1,5 @@
 -- ================================
--- INSERT DATA FOR TRIP (20 rows)
+-- INSERT DATA FOR TRIP (20 rows -- 20 trips)
 -- ================================
 INSERT INTO TRIP (trip_name, destination, start_date, end_date, notes) VALUES
 ('Hawaii Vacation', 'Honolulu', '2025-01-10', '2025-01-20', 'Beach trip and hiking'),
@@ -189,7 +189,8 @@ INSERT INTO FLIGHT (trip_id, airline, flight_num, depart_date, arrive_date, depa
 (20,'Peach','MM301','2025-04-08','2025-04-08','KIX','HND',100.00);
 
 /* ===========================
-   HOTEL — 25 rows
+   HOTEL — 34 rows
+   --1-2 hotels per trip--20 trips--
    =========================== */
 INSERT INTO HOTEL (trip_id, hotel_name, checkin_date, checkout_date, address, price_per_night)
 VALUES
@@ -435,7 +436,8 @@ VALUES
 
 
 /* ===========================
-   EXPENSE — 40 rows
+   EXPENSE — 61 rows
+   --2-4 expenses per trip--20 trips--
    =========================== */
 INSERT INTO EXPENSE (trip_id, category, amount, description, expense_date)
 VALUES
@@ -545,7 +547,8 @@ VALUES
 
 
 /* ===========================
-   FAVORITE — 30 rows
+   FAVORITE — 78 rows
+   --3-7 favorites per trip--20 trips--
    =========================== */
 INSERT INTO FAVORITE (trip_id, item_type, item_id, rating)
 VALUES
