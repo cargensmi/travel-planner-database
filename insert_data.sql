@@ -547,7 +547,7 @@ VALUES
 
 
 /* ===========================
-   FAVORITE — 78 rows
+   FAVORITE — 81 rows
    --3-7 favorites per trip--20 trips--
    =========================== */
 INSERT INTO FAVORITE (trip_id, item_type, item_id, rating)
