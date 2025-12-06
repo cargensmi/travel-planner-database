@@ -269,6 +269,7 @@ VALUES
 
 -- ================================
 -- INSERT DATA FOR ACTIVITY (120 rows)
+-- 6 activities per trip × 20 trips
 -- ================================
 INSERT INTO ACTIVITY (trip_id, activity_date, location, cost, category)
 VALUES
