@@ -2,6 +2,7 @@
 DROP VIEW IF EXISTS trip_summary;
 
 -- Drop tables in order to avoid foreign key conflicts
+-- ORDER MATTERS - MUST DROP CHILD TABleS BEFORE PARENT TABLE (parent table = trip)
 DROP TABLE IF EXISTS FAVORITE;
 DROP TABLE IF EXISTS EXPENSE;
 DROP TABLE IF EXISTS HOTEL;
