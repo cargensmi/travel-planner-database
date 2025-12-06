@@ -436,8 +436,8 @@ VALUES
 
 
 /* ===========================
-   EXPENSE — 61 rows
-   --2-4 expenses per trip--20 trips--
+   EXPENSE — 64 rows
+   --3-4 expenses per trip--20 trips--
    =========================== */
 INSERT INTO EXPENSE (trip_id, category, amount, description, expense_date)
 VALUES
