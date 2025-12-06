@@ -1,82 +1,57 @@
--- query 1
-SELECT trip_name, destination, start_date, end_date
+-- Query 1: SELECT using ORDER BY two or more columns
+SELECT trip_id, trip_name, destination, start_date
 FROM TRIP
-ORDER BY destination ASC, start_date DESC;
+ORDER BY start_date ASC, trip_name ASC;
 
---query 2
-SELECT 
-    flight_id,
-    price,
-    price * 0.07 AS tax_amount,
-    price + (price * 0.07) AS total_cost
-FROM FLIGHT;
+-- Query 2: SELECT using a calculated field
+SELECT expense_id, category, amount, amount * 1.10 AS total_with_tax
+FROM EXPENSE
+WHERE trip_id = 1;
 
--- query 3
-SELECT 
-    trip_name,
-    MONTH(start_date) AS start_month,
-    MID(destination, 1, 3) AS dest_prefix
-FROM TRIP;
-
--- query 4
-SELECT 
-    destination,
-    COUNT(*) AS num_trips,
-    AVG(DATEDIFF(end_date, start_date)) AS avg_trip_length
+-- Query 3: SELECT using a MariaDB function
+SELECT trip_name, start_date, MONTH(start_date) AS month_number
 FROM TRIP
-GROUP BY destination
-HAVING COUNT(*) >= 2;
+WHERE destination = 'New York';
 
+-- Query 4: Aggregation with GROUP BY and HAVING
+SELECT trip_id, SUM(amount) AS total_expenses
+FROM EXPENSE
+GROUP BY trip_id
+HAVING total_expenses > 100;
 
--- query 5
-SELECT 
-    t.trip_name,
-    f.airline,
-    h.hotel_name,
-    a.activity_name
-FROM TRIP t
-INNER JOIN FLIGHT f ON t.trip_id = f.trip_id
-INNER JOIN HOTEL h ON t.trip_id = h.trip_id
-INNER JOIN ACTIVITY a ON t.trip_id = a.trip_id;
+-- Query 5: Join of three tables
+SELECT T.trip_name, H.hotel_name, SUM(E.amount) AS total_expenses
+FROM TRIP T
+INNER JOIN HOTEL H ON T.trip_id = H.trip_id
+INNER JOIN EXPENSE E ON T.trip_id = E.trip_id
+GROUP BY T.trip_name, H.hotel_name
+LIMIT 5;
 
--- query 6
-SELECT 
-    t.trip_name,
-    f.flight_num,
-    f.airline
-FROM TRIP t
-LEFT JOIN FLIGHT f ON t.trip_id = f.trip_id;
+-- Query 6: LEFT JOIN
+SELECT T.trip_name, F.item_type, F.rating
+FROM TRIP T
+LEFT JOIN FAVORITE F ON T.trip_id = F.trip_id
+WHERE T.trip_id = 3;
 
--- query 7
-UPDATE FLIGHT
-SET price = price + 50
-WHERE airline = 'Delta';
+-- Query 7: UPDATE query
+UPDATE HOTEL
+SET price_per_night = 180
+WHERE hotel_name = 'Ocean Breeze Resort';
 
--- query 8
-DELETE FROM TRIP
-WHERE destination = 'Vermont';
+-- Query 8: DELETE query
+DELETE FROM EXPENSE
+WHERE expense_id = 95;
 
--- query 9 
-CREATE OR REPLACE VIEW TripCosts AS
-SELECT 
-    t.trip_id,
-    t.trip_name,
-    SUM(f.price) AS total_flight_cost
-FROM TRIP t
-JOIN FLIGHT f ON t.trip_id = f.trip_id
-GROUP BY t.trip_id, t.trip_name;
+-- Query 9: Create a View
+CREATE OR REPLACE VIEW trip_summary AS
+SELECT T.trip_id, T.trip_name, H.hotel_name, AVG(E.amount) AS avg_expense
+FROM TRIP T
+INNER JOIN HOTEL H ON T.trip_id = H.trip_id
+INNER JOIN EXPENSE E ON T.trip_id = E.trip_id
+GROUP BY T.trip_id, H.hotel_name;
 
--- use view 
-SELECT * FROM TripCosts ORDER BY total_flight_cost DESC;
-
--- query 10
+-- Query 10: Transaction with ROLLBACK
 START TRANSACTION;
-
-UPDATE FLIGHT
-SET price = price * 0.5
-WHERE airline = 'ANA';
-
--- Check results (optional)
-SELECT * FROM FLIGHT WHERE airline = 'ANA';
-
+UPDATE HOTEL SET price_per_night = 200 WHERE hotel_name = 'Ocean Breeze Resort';
+UPDATE HOTEL SET price_per_night = 190 WHERE hotel_name = 'Midtown Conference Hotel';
 ROLLBACK;
