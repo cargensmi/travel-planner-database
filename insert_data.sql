@@ -193,31 +193,79 @@ INSERT INTO FLIGHT (trip_id, airline, flight_num, depart_date, arrive_date, depa
    =========================== */
 INSERT INTO HOTEL (trip_id, hotel_name, checkin_date, checkout_date, address, price_per_night)
 VALUES
-(1, 'Ocean Breeze Resort', '2025-06-01', '2025-06-05', '12 Beach Road', 150),
-(1, 'Harbor View Hotel', '2025-06-05', '2025-06-09', '88 Dockside Way', 170),
-(1, 'Mountain Lodge', '2025-06-09', '2025-06-12', '200 Summit Drive', 120),
-(1, 'Palm Paradise Inn', '2025-06-12', '2025-06-15', '77 Coconut Lane', 135),
-(1, 'City Central Suites', '2025-06-15', '2025-06-18', '489 Downtown Street', 180),
-(1, 'Skyline Hotel', '2025-06-18', '2025-06-20', '100 Highrise Ave', 200),
-(1, 'Lakeside Retreat', '2025-06-20', '2025-06-23', '330 Waterfall Road', 110),
-(1, 'Golden Sands Hotel', '2025-06-23', '2025-06-27', '555 Sand Beach', 160),
-(1, 'Royal Garden Inn', '2025-06-27', '2025-06-30', '45 Green Park Blvd', 145),
-(1, 'Cedar Hills Hotel', '2025-06-30', '2025-07-03', '90 Forest Ridge', 125),
-(1, 'Island Escape Resort', '2025-07-03', '2025-07-06', '500 Island Ave', 210),
-(1, 'Sunrise Hotel', '2025-07-06', '2025-07-08', '99 Horizon Road', 140),
-(1, 'Silver Valley Lodge', '2025-07-08', '2025-07-10', '212 Valley Pass', 115),
-(1, 'Crystal Springs Inn', '2025-07-10', '2025-07-12', '87 Springwater Rd', 130),
-(1, 'Blue Lagoon Resort', '2025-07-12', '2025-07-15', '600 Lagoon Drive', 190),
-(1, 'Coral Reef Hotel', '2025-07-15', '2025-07-18', '450 Reef Ave', 170),
-(1, 'Evergreen Inn', '2025-07-18', '2025-07-21', '78 Grove Street', 125),
-(1, 'Hillcrest Suites', '2025-07-21', '2025-07-23', '320 Hillcrest Lane', 155),
-(1, 'Sunset View Hotel', '2025-07-23', '2025-07-26', '180 Sunset Blvd', 175),
-(1, 'Bayshore Inn', '2025-07-26', '2025-07-29', '25 Shoreline Drive', 165),
-(1, 'Sapphire Resort', '2025-07-29', '2025-08-01', '333 Oceanview Ave', 205),
-(1, 'Pine Ridge Lodge', '2025-08-01', '2025-08-03', '20 Pine Ridge', 110),
-(1, 'Harborlight Hotel', '2025-08-03', '2025-08-06', '410 Harbor St', 145),
-(1, 'Cove Cliff Inn', '2025-08-06', '2025-08-08', '95 Cliffside Road', 135),
-(1, 'Grand Bay Resort', '2025-08-08', '2025-08-11', '201 Grand Bay Way', 220);
+-- Trip 1: Hawaii Vacation (Honolulu)
+(1, 'Ocean Breeze Resort', '2025-01-10', '2025-01-15', '12 Beach Road, Honolulu', 150),
+(1, 'Harbor View Hotel', '2025-01-15', '2025-01-20', '88 Dockside Way, Honolulu', 170),
+
+-- Trip 2: Business Conference (New York)
+(2, 'Midtown Conference Hotel', '2025-02-05', '2025-02-10', '123 5th Ave, New York, NY', 200),
+
+-- Trip 3: Family Reunion (Chicago)
+(3, 'Lakefront Suites', '2025-03-12', '2025-03-18', '456 Lakeside Dr, Chicago, IL', 160),
+
+-- Trip 4: Spring Break (Miami)
+(4, 'South Beach Resort', '2025-03-25', '2025-03-30', '77 Ocean Drive, Miami, FL', 180),
+(4, 'Downtown Miami Hotel', '2025-03-30', '2025-04-02', '200 Brickell Ave, Miami, FL', 150),
+
+-- Trip 5: European Tour (London)
+(5, 'London Central Inn', '2025-04-10', '2025-04-18', '10 Baker Street, London, UK', 220),
+(5, 'Riverside Hotel London', '2025-04-18', '2025-04-25', '25 Thames Road, London, UK', 250),
+
+-- Trip 6: Desert Adventure (Phoenix)
+(6, 'Cactus Inn', '2025-05-01', '2025-05-05', '88 Desert Rd, Phoenix, AZ', 140),
+(6, 'Sunset Desert Hotel', '2025-05-05', '2025-05-10', '123 Sandstone Ave, Phoenix, AZ', 160),
+
+-- Trip 7: National Park Trip (Denver)
+(7, 'Rocky Mountain Lodge', '2025-05-15', '2025-05-20', '200 Summit Drive, Denver, CO', 180),
+(7, 'Denver City Hotel', '2025-05-20', '2025-05-25', '77 Downtown St, Denver, CO', 150),
+
+-- Trip 8: Summer Beach Trip (San Diego)
+(8, 'Pacific Beach Resort', '2025-06-05', '2025-06-10', '50 Beach Ave, San Diego, CA', 170),
+(8, 'Downtown San Diego Hotel', '2025-06-10', '2025-06-15', '99 Harbor Blvd, San Diego, CA', 160),
+
+-- Trip 9: Solo Retreat (Seattle)
+(9, 'Emerald City Inn', '2025-07-01', '2025-07-05', '45 Pine Street, Seattle, WA', 150),
+(9, 'Lakeview Hotel', '2025-07-05', '2025-07-08', '200 Lake Ave, Seattle, WA', 140),
+
+-- Trip 10: Wedding Trip (Nashville)
+(10, 'Music City Hotel', '2025-07-20', '2025-07-23', '123 Broadway St, Nashville, TN', 180),
+(10, 'Downtown Inn', '2025-07-23', '2025-07-25', '78 Main St, Nashville, TN', 160),
+
+-- Trip 11: Girls Getaway (Las Vegas)
+(11, 'The Strip Resort', '2025-08-03', '2025-08-06', '500 Las Vegas Blvd, Las Vegas, NV', 200),
+(11, 'Downtown Vegas Hotel', '2025-08-06', '2025-08-08', '77 Fremont St, Las Vegas, NV', 180),
+
+-- Trip 12: Road Trip End (Portland)
+(12, 'Riverfront Hotel', '2025-08-15', '2025-08-20', '88 River Rd, Portland, OR', 160),
+(12, 'Downtown Portland Inn', '2025-08-20', '2025-08-25', '123 Broadway St, Portland, OR', 150),
+
+-- Trip 13: Fall Colors Trip (Boston)
+(13, 'Beacon Hill Hotel', '2025-09-25', '2025-10-02', '77 Charles St, Boston, MA', 180),
+
+-- Trip 14: Mountain Retreat (Salt Lake City)
+(14, 'Alpine Lodge', '2025-10-10', '2025-10-14', '45 Mountain Rd, Salt Lake City, UT', 160),
+(14, 'Summit Hotel', '2025-10-14', '2025-10-18', '200 Summit Ave, Salt Lake City, UT', 170),
+
+-- Trip 15: Holiday Markets (Munich)
+(15, 'Marienplatz Hotel', '2025-11-20', '2025-11-28', '10 Marienplatz, Munich, Germany', 220),
+(15, 'Bavaria Inn', '2025-11-28', '2025-12-05', '25 Ludwigstrasse, Munich, Germany', 210),
+
+-- Trip 16: Tropical Winter Escape (San Juan)
+(16, 'Caribbean Breeze Resort', '2025-12-15', '2025-12-20', '88 Beachfront Rd, San Juan, PR', 230),
+(16, 'Old San Juan Inn', '2025-12-20', '2025-12-23', '77 Calle Fortaleza, San Juan, PR', 200),
+
+-- Trip 17: Weekend Escape (Atlanta)
+(17, 'Peachtree Hotel', '2025-01-05', '2025-01-08', '123 Peachtree St, Atlanta, GA', 150),
+
+-- Trip 18: Work Trip (Houston)
+(18, 'Downtown Houston Hotel', '2025-02-14', '2025-02-18', '77 Main St, Houston, TX', 160),
+
+-- Trip 19: City Exploring (Philadelphia)
+(19, 'Liberty Bell Inn', '2025-03-05', '2025-03-10', '45 Market St, Philadelphia, PA', 150),
+
+-- Trip 20: Cultural Immersion (Tokyo)
+(20, 'Shinjuku Grand Hotel', '2025-04-01', '2025-04-08', '88 Shinjuku St, Tokyo, Japan', 220),
+(20, 'Asakusa Inn', '2025-04-08', '2025-04-15', '12 Asakusa Rd, Tokyo, Japan', 210);
 
 -- ================================
 -- INSERT DATA FOR ACTIVITY (120 rows)
