@@ -438,46 +438,110 @@ VALUES
    =========================== */
 INSERT INTO EXPENSE (trip_id, category, amount, description, expense_date)
 VALUES
-(1, 'Food', 15.50, 'Lunch', '2025-06-01'),
-(1, 'Transportation', 22.00, 'Bus pass', '2025-06-01'),
-(1, 'Shopping', 35.00, 'Souvenirs', '2025-06-02'),
-(1, 'Food', 18.25, 'Dinner', '2025-06-02'),
-(1, 'Entertainment', 12.00, 'Museum ticket', '2025-06-03'),
-(1, 'Food', 16.75, 'Breakfast', '2025-06-04'),
-(1, 'Transportation', 19.00, 'Taxi', '2025-06-04'),
-(1, 'Food', 14.50, 'Lunch', '2025-06-05'),
-(1, 'Shopping', 27.00, 'Clothes', '2025-06-06'),
-(1, 'Food', 17.20, 'Dinner', '2025-06-06'),
-(1, 'Entertainment', 30.00, 'Show ticket', '2025-06-07'),
-(1, 'Food', 11.50, 'Snacks', '2025-06-08'),
-(1, 'Transportation', 25.00, 'Uber ride', '2025-06-08'),
-(1, 'Food', 19.80, 'Lunch', '2025-06-09'),
-(1, 'Shopping', 40.00, 'Gifts', '2025-06-10'),
-(1, 'Food', 13.75, 'Breakfast', '2025-06-11'),
-(1, 'Transportation', 18.00, 'Train ticket', '2025-06-11'),
-(1, 'Entertainment', 20.00, 'Guided tour', '2025-06-12'),
-(1, 'Food', 21.40, 'Dinner', '2025-06-12'),
-(1, 'Food', 9.25, 'Snacks', '2025-06-13'),
-(1, 'Shopping', 32.00, 'Street market', '2025-06-14'),
-(1, 'Entertainment', 14.00, 'Park entry', '2025-06-15'),
-(1, 'Food', 15.90, 'Lunch', '2025-06-15'),
-(1, 'Transportation', 16.00, 'Bus pass', '2025-06-16'),
-(1, 'Food', 18.60, 'Dinner', '2025-06-16'),
-(1, 'Shopping', 22.00, 'Souvenirs', '2025-06-17'),
-(1, 'Entertainment', 28.00, 'Aquarium ticket', '2025-06-17'),
-(1, 'Food', 12.40, 'Breakfast', '2025-06-18'),
-(1, 'Transportation', 20.00, 'Taxi', '2025-06-19'),
-(1, 'Food', 17.40, 'Lunch', '2025-06-19'),
-(1, 'Shopping', 26.00, 'Clothes', '2025-06-20'),
-(1, 'Food', 14.90, 'Dinner', '2025-06-20'),
-(1, 'Entertainment', 16.00, 'Museum ticket', '2025-06-21'),
-(1, 'Food', 10.50, 'Snacks', '2025-06-21'),
-(1, 'Transportation', 23.00, 'Taxi', '2025-06-22'),
-(1, 'Food', 20.80, 'Lunch', '2025-06-22'),
-(1, 'Shopping', 45.00, 'Gifts', '2025-06-23'),
-(1, 'Food', 13.00, 'Breakfast', '2025-06-23'),
-(1, 'Entertainment', 25.00, 'Show ticket', '2025-06-24'),
-(1, 'Food', 18.30, 'Dinner', '2025-06-24');
+-- Trip 1: Hawaii Vacation
+(1, 'Food', 15.50, 'Lunch at beach cafe', '2025-01-10'),
+(1, 'Transportation', 22.00, 'Bus to city tour', '2025-01-10'),
+(1, 'Entertainment', 35.00, 'Snorkeling excursion', '2025-01-11'),
+(1, 'Food', 18.25, 'Dinner at local restaurant', '2025-01-11'),
+
+-- Trip 2: Business Conference (New York)
+(2, 'Food', 25.00, 'Lunch at hotel', '2025-02-05'),
+(2, 'Transportation', 15.00, 'Subway pass', '2025-02-05'),
+(2, 'Entertainment', 50.00, 'Networking event ticket', '2025-02-06'),
+
+-- Trip 3: Family Reunion (Chicago)
+(3, 'Food', 60.00, 'Family dinner', '2025-03-12'),
+(3, 'Transportation', 30.00, 'Uber to reunion venue', '2025-03-12'),
+(3, 'Shopping', 40.00, 'Family gifts', '2025-03-13'),
+
+-- Trip 4: Spring Break (Miami)
+(4, 'Food', 20.00, 'Beachside lunch', '2025-03-25'),
+(4, 'Transportation', 18.00, 'Taxi to nightlife district', '2025-03-25'),
+(4, 'Entertainment', 45.00, 'Club entry', '2025-03-26'),
+(4, 'Food', 22.00, 'Dinner at seafood restaurant', '2025-03-26'),
+
+-- Trip 5: European Tour (London)
+(5, 'Food', 35.00, 'Lunch in London cafe', '2025-04-10'),
+(5, 'Transportation', 60.00, 'Train between cities', '2025-04-11'),
+(5, 'Shopping', 120.00, 'Souvenirs', '2025-04-12'),
+(5, 'Entertainment', 50.00, 'Theatre ticket', '2025-04-13'),
+
+-- Trip 6: Desert Adventure (Phoenix)
+(6, 'Food', 18.00, 'Breakfast at lodge', '2025-05-01'),
+(6, 'Transportation', 25.00, 'Rental car', '2025-05-01'),
+(6, 'Entertainment', 40.00, 'Desert tour', '2025-05-02'),
+
+-- Trip 7: National Park Trip (Denver)
+(7, 'Food', 15.00, 'Lunch at visitor center', '2025-05-15'),
+(7, 'Transportation', 20.00, 'Shuttle to park', '2025-05-15'),
+(7, 'Entertainment', 30.00, 'Park entrance fee', '2025-05-16'),
+
+-- Trip 8: Summer Beach Trip (San Diego)
+(8, 'Food', 12.00, 'Breakfast at cafe', '2025-06-05'),
+(8, 'Transportation', 18.00, 'Bus pass', '2025-06-05'),
+(8, 'Entertainment', 45.00, 'Surfing lesson', '2025-06-06'),
+(8, 'Food', 25.00, 'Dinner at seafood restaurant', '2025-06-06'),
+
+-- Trip 9: Solo Retreat (Seattle)
+(9, 'Food', 14.00, 'Coffee and pastry', '2025-07-01'),
+(9, 'Transportation', 10.00, 'Metro ride', '2025-07-01'),
+(9, 'Entertainment', 35.00, 'Museum entry', '2025-07-02'),
+
+-- Trip 10: Wedding Trip (Nashville)
+(10, 'Food', 20.00, 'Lunch at hotel', '2025-07-20'),
+(10, 'Transportation', 12.00, 'Taxi to wedding venue', '2025-07-20'),
+(10, 'Entertainment', 50.00, 'Wedding reception', '2025-07-21'),
+
+-- Trip 11: Girls Getaway (Las Vegas)
+(11, 'Food', 30.00, 'Buffet lunch', '2025-08-03'),
+(11, 'Transportation', 20.00, 'Taxi to strip', '2025-08-03'),
+(11, 'Entertainment', 60.00, 'Show ticket', '2025-08-04'),
+
+-- Trip 12: Road Trip End (Portland)
+(12, 'Food', 15.00, 'Lunch on road', '2025-08-15'),
+(12, 'Transportation', 50.00, 'Gas', '2025-08-15'),
+(12, 'Entertainment', 25.00, 'Museum entry', '2025-08-16'),
+
+-- Trip 13: Fall Colors Trip (Boston)
+(13, 'Food', 18.00, 'Lunch at local cafe', '2025-09-25'),
+(13, 'Transportation', 15.00, 'Subway pass', '2025-09-25'),
+(13, 'Entertainment', 40.00, 'Historic tour', '2025-09-26'),
+
+-- Trip 14: Mountain Retreat (Salt Lake City)
+(14, 'Food', 20.00, 'Breakfast at lodge', '2025-10-10'),
+(14, 'Transportation', 25.00, 'Rental car', '2025-10-10'),
+(14, 'Entertainment', 50.00, 'Ski lift ticket', '2025-10-11'),
+
+-- Trip 15: Holiday Markets (Munich)
+(15, 'Food', 30.00, 'Lunch at market', '2025-11-20'),
+(15, 'Shopping', 80.00, 'Christmas gifts', '2025-11-21'),
+(15, 'Entertainment', 20.00, 'Market entry', '2025-11-22'),
+
+-- Trip 16: Tropical Winter Escape (San Juan)
+(16, 'Food', 25.00, 'Lunch at resort', '2025-12-15'),
+(16, 'Transportation', 15.00, 'Taxi to old town', '2025-12-16'),
+(16, 'Entertainment', 50.00, 'Catamaran tour', '2025-12-17'),
+
+-- Trip 17: Weekend Escape (Atlanta)
+(17, 'Food', 18.00, 'Lunch at downtown', '2025-01-05'),
+(17, 'Transportation', 12.00, 'Taxi', '2025-01-05'),
+
+-- Trip 18: Work Trip (Houston)
+(18, 'Food', 22.00, 'Lunch at hotel', '2025-02-14'),
+(18, 'Transportation', 15.00, 'Metro pass', '2025-02-14'),
+(18, 'Entertainment', 35.00, 'Networking event', '2025-02-15'),
+
+-- Trip 19: City Exploring (Philadelphia)
+(19, 'Food', 16.00, 'Lunch at historic district', '2025-03-05'),
+(19, 'Transportation', 12.00, 'Subway pass', '2025-03-05'),
+(19, 'Entertainment', 20.00, 'Museum entry', '2025-03-06'),
+
+-- Trip 20: Cultural Immersion (Tokyo)
+(20, 'Food', 35.00, 'Lunch in Shinjuku', '2025-04-01'),
+(20, 'Transportation', 25.00, 'Metro pass', '2025-04-01'),
+(20, 'Entertainment', 45.00, 'Temple visit', '2025-04-02'),
+(20, 'Shopping', 60.00, 'Local souvenirs', '2025-04-03');
+
 
 /* ===========================
    FAVORITE — 30 rows
