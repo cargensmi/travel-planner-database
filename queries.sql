@@ -40,7 +40,7 @@ WHERE hotel_name = 'Ocean Breeze Resort';
 
 -- Query 8: DELETE query
 DELETE FROM EXPENSE
-WHERE expense_id = 95;
+WHERE expense_id = 60;
 
 -- Query 9: Create a View
 CREATE OR REPLACE VIEW trip_summary AS
