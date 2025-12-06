@@ -548,34 +548,123 @@ VALUES
    =========================== */
 INSERT INTO FAVORITE (trip_id, item_type, item_id, rating)
 VALUES
+-- Trip 1: Hawaii Vacation
 (1, 'hotel', 1, 5),
 (1, 'hotel', 2, 4),
-(1, 'hotel', 3, 5),
-(1, 'activity', 10, 5),
-(1, 'activity', 11, 4),
-(1, 'activity', 12, 5),
-(1, 'activity', 15, 3),
-(1, 'activity', 18, 5),
+(1, 'activity', 1, 5),
+(1, 'activity', 3, 4),
 (1, 'expense', 1, 4),
-(1, 'expense', 2, 3),
-(1, 'expense', 3, 5),
 (1, 'restaurant', NULL, 5),
-(1, 'scenic_spot', NULL, 4),
-(1, 'store', NULL, 3),
-(1, 'hotel', 5, 4),
-(1, 'hotel', 6, 5),
-(1, 'hotel', 7, 4),
-(1, 'activity', 20, 5),
-(1, 'activity', 22, 4),
-(1, 'activity', 25, 5),
-(1, 'activity', 30, 4),
-(1, 'activity', 35, 5),
-(1, 'restaurant', NULL, 4),
-(1, 'park', NULL, 5),
-(1, 'hotel', 8, 5),
-(1, 'hotel', 9, 4),
-(1, 'activity', 40, 5),
-(1, 'activity', 45, 3),
-(1, 'activity', 50, 5),
-(1, 'hotel', 10, 4);
+(1, 'scenic_spot', NULL, 5),
 
+-- Trip 2: Business Conference (New York)
+(2, 'hotel', 12, 4),
+(2, 'activity', 21, 5),
+(2, 'expense', 6, 4),
+(2, 'restaurant', NULL, 4),
+
+-- Trip 3: Family Reunion (Chicago)
+(3, 'hotel', 13, 5),
+(3, 'activity', 31, 4),
+(3, 'expense', 10, 5),
+(3, 'store', NULL, 4),
+
+-- Trip 4: Spring Break (Miami)
+(4, 'hotel', 14, 4),
+(4, 'activity', 41, 5),
+(4, 'expense', 15, 5),
+(4, 'restaurant', NULL, 4),
+(4, 'scenic_spot', NULL, 5),
+
+-- Trip 5: European Tour (London)
+(5, 'hotel', 15, 5),
+(5, 'activity', 51, 5),
+(5, 'expense', 20, 4),
+(5, 'restaurant', NULL, 5),
+(5, 'scenic_spot', NULL, 4),
+
+-- Trip 6: Desert Adventure (Phoenix)
+(6, 'hotel', 16, 4),
+(6, 'activity', 61, 5),
+(6, 'expense', 25, 4),
+
+-- Trip 7: National Park Trip (Denver)
+(7, 'hotel', 17, 5),
+(7, 'activity', 71, 5),
+(7, 'expense', 30, 5),
+(7, 'park', NULL, 5),
+
+-- Trip 8: Summer Beach Trip (San Diego)
+(8, 'hotel', 18, 5),
+(8, 'activity', 81, 5),
+(8, 'expense', 35, 4),
+(8, 'scenic_spot', NULL, 5),
+
+-- Trip 9: Solo Retreat (Seattle)
+(9, 'hotel', 19, 4),
+(9, 'activity', 91, 5),
+(9, 'expense', 40, 5),
+
+-- Trip 10: Wedding Trip (Nashville)
+(10, 'hotel', 20, 5),
+(10, 'activity', 101, 4),
+(10, 'expense', 45, 5),
+(10, 'restaurant', NULL, 5),
+
+-- Trip 11: Girls Getaway (Las Vegas)
+(11, 'hotel', 21, 4),
+(11, 'activity', 111, 5),
+(11, 'expense', 50, 5),
+(11, 'store', NULL, 4),
+
+-- Trip 12: Road Trip End (Portland)
+(12, 'hotel', 22, 4),
+(12, 'activity', 121, 5),
+(12, 'expense', 55, 4),
+(12, 'scenic_spot', NULL, 5),
+
+-- Trip 13: Fall Colors Trip (Boston)
+(13, 'hotel', 23, 5),
+(13, 'activity', 131, 4),
+(13, 'expense', 60, 5),
+(13, 'park', NULL, 5),
+
+-- Trip 14: Mountain Retreat (Salt Lake City)
+(14, 'hotel', 24, 4),
+(14, 'activity', 141, 5),
+(14, 'expense', 65, 5),
+
+-- Trip 15: Holiday Markets (Munich)
+(15, 'hotel', 25, 5),
+(15, 'activity', 151, 5),
+(15, 'expense', 70, 4),
+(15, 'store', NULL, 5),
+
+-- Trip 16: Tropical Winter Escape (San Juan)
+(16, 'hotel', 26, 5),
+(16, 'activity', 161, 5),
+(16, 'expense', 75, 4),
+(16, 'scenic_spot', NULL, 5),
+
+-- Trip 17: Weekend Escape (Atlanta)
+(17, 'hotel', 27, 4),
+(17, 'activity', 171, 5),
+(17, 'expense', 80, 4),
+
+-- Trip 18: Work Trip (Houston)
+(18, 'hotel', 28, 4),
+(18, 'activity', 181, 5),
+(18, 'expense', 85, 4),
+
+-- Trip 19: City Exploring (Philadelphia)
+(19, 'hotel', 29, 4),
+(19, 'activity', 191, 5),
+(19, 'expense', 90, 4),
+(19, 'restaurant', NULL, 5),
+
+-- Trip 20: Cultural Immersion (Tokyo)
+(20, 'hotel', 30, 5),
+(20, 'activity', 201, 5),
+(20, 'expense', 95, 4),
+(20, 'store', NULL, 5),
+(20, 'restaurant', NULL, 5);
