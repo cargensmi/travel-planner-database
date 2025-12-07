@@ -14,7 +14,7 @@ The user will begin by creating a trip, in which they can add flights, hotel sta
 
 ![ER Diagram](Travel_Database_ER_Diagram.png)
 
-# Database Design Description
+## Database Design Description
 
 
 
