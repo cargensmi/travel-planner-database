@@ -16,6 +16,10 @@ The user will begin by creating a trip, in which they can add flights, hotel sta
 
 ## Database Design Description
 
+------add description-------
+----------------------------
+----------------------------
+
 
 
 ### Create Tables
