@@ -21,7 +21,15 @@ For the purpose of user-friendliness, I had added the “Favorite” table after
 
 ```TRIP``` The trip table is the parent table in the travel database. It ensures every trip has a unique ID for linking other tables. It contains the trip ID, name of the trip, destination, start date, end date, and any notes about the trip that the user wants to input. 
 
+```FLIGHT``` The flight table organizes information about airlines, flight numbers, the dates that the user departs and arrives, the airports the user departs from and arrives to, and the cost of any and all flight expenses. 
 
+```HOTEL``` The hotel table organizes information as it relates to hotel stays. It includes the names of hotels, checkin and checkout dates, the address of the hotel, and the cost per night at the hotel. This table helps the user easily access information about hotel reservations, cutting town time, and increasing efficiency. 
+
+```ACTIVITY``` The activity table organizes information about individual experiences the user chooses to partake in during their travel. This could include restaurants, theater performances, wild-life exhibits, etc. The table includes information about the date, location, cost, and category of each activity. The category key is a useful feature as it helps break a long list of data into smaller groups that are easier to locate more quickly. 
+
+```EXPENSE``` The expense table includes information about the category, amount, description, and date of each expense on the trip. This is a rather helpful table in the database as it helps with the logistics of what all the user and their party can partake in as it fits into their budget. 
+
+```FAVORITE``` The favorite table includes the item type, item ID, and rating of that item. This includes the user’s numerical ratings of all individual experiences during their trip. It is a helpful feature that allows the user to quickly see which hotels, airlines, restaurants, etc. they enjoyed the most. 
 
 
 ### Create Tables
