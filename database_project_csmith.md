@@ -24,6 +24,7 @@ The user will begin by creating a trip, in which they can add flights, hotel sta
 
 ### Create Tables
 
+```sql
 -- Drop tables if they exist (optional but helpful during testing)
 DROP TABLE IF EXISTS FLIGHT;
 DROP TABLE IF EXISTS EXPENSE;
@@ -118,10 +119,12 @@ CREATE TABLE FAVORITE (
     FOREIGN KEY (trip_id) REFERENCES TRIP(trip_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
-) ENGINE=InnoDB;
+) ENGINE=InnoDB; 
+```
 
 ### Insert Data
 
+```sql
 -- ================================
 -- INSERT DATA FOR TRIP (20 rows -- 20 trips)
 -- ================================
@@ -796,4 +799,4 @@ VALUES
 (20, 'expense', 95, 4),
 (20, 'store', NULL, 5),
 (20, 'restaurant', NULL, 5);
-
+```
