@@ -19,7 +19,7 @@ The user will begin by creating a trip, in which they can add flights, hotel sta
 I chose to make the “Trip” table be the parent table as it is the broader category of every other aspect of traveling. I had five other tables: Flight, Hotel, Activity, Expense, and Favorite. Each one of these has a one-to-many relationship with the parent table, “Trip”. This is because there will always be one trip, but there can be multiple of each of the other categories. All five of the relationships shown support 3rd Normal Form. Every child table depends on its specific primary key which avoids redundancy. 
 For the purpose of user-friendliness, I had added the “Favorite” table after my initial design because I figured it would be easier to navigate past trips and see which experiences were preferable over others. This allowed the database to be a tool used for ensuring each future trip is more enjoyable than the previous, rather than simply storing past data. I see the favorites trip as the summary table of all other important information in the database as a whole. If the user were to need to plan a trip in a hurry, this table allows them to have the important data condensed into one table. 
 
-```sql TRIP``` The trip table is the parent table in the travel database. It ensures every trip has a unique ID for linking other tables. It contains the trip ID, name of the trip, destination, start date, end date, and any notes about the trip that the user wants to input. 
+```TRIP``` The trip table is the parent table in the travel database. It ensures every trip has a unique ID for linking other tables. It contains the trip ID, name of the trip, destination, start date, end date, and any notes about the trip that the user wants to input. 
 
 
 
