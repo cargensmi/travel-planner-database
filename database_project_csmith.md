@@ -12,4 +12,4 @@ The user will begin by creating a trip, in which they can add flights, hotel sta
 
 ## Database ER Model
 
-![ER Diagram](Travel_Databse_ER_Diagram.png)
+![ER Diagram](Travel_Database_ER_Diagram.png)
