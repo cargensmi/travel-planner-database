@@ -915,7 +915,18 @@ Sample Output
 ## Query 8
 ```sql
 -- Query 8: DELETE query
+-- Show the expense we plan to delete
+SELECT expense_id, trip_id, item_type, item_id, amount
+FROM EXPENSE
+WHERE expense_id = 60;
+
+-- Delete the row
 DELETE FROM EXPENSE
+WHERE expense_id = 60;
+
+-- Confirm it is gone
+SELECT expense_id, trip_id, item_type, item_id, amount
+FROM EXPENSE
 WHERE expense_id = 60;
 ```
 
