@@ -1010,7 +1010,7 @@ Sample GoogleSheets PieChart
 
 <img width="604" height="375" alt="piechart" src="https://github.com/user-attachments/assets/c6860985-49d8-4525-b24f-fbf5c0c07a21" />
 
-[Link to PieChart]([URL](https://github.com/cargensmi/travel-planner-database/blob/main/table_report.png))
+[Link to PieChart](https://github.com/cargensmi/travel-planner-database/blob/main/table_report.png)
 
 Sample PowerBI Table Report 
 
