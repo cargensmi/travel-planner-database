@@ -1012,6 +1012,7 @@ Sample GoogleSheets PieChart
 
 
 Sample PowerBI Table Report 
+
 <img width="185" height="454" alt="table_report" src="https://github.com/user-attachments/assets/c01fabc0-59b0-4504-a3ca-b365815c0ef2" />
 
 
