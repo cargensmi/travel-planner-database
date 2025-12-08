@@ -821,7 +821,7 @@ SELECT trip_id, trip_name, destination, start_date
 FROM TRIP
 ORDER BY start_date ASC, trip_name ASC;
 ```
-This query retrieves the trip ID, name, destination, and start date for all trips and sorts the results first by start_date in ascending order, and then by trip_name in ascending order for trips with the same start date. It helps display trips chronologically and alphabetically.
+This query retrieves the trip ID, name, destination, and start date for all trips and sorts the results first by ```start_date``` in ascending order, and then by ```trip_name``` in ascending order for trips with the same start date. It helps display trips chronologically and alphabetically.
 
 Sample Output
 
@@ -834,7 +834,7 @@ SELECT expense_id, category, amount, amount * 1.10 AS total_with_tax
 FROM EXPENSE
 WHERE trip_id = 1;
 ```
-This query retrieves the expense ID, category, and amount for all expenses of trip 1, and also calculates a new field total_with_tax by adding 10% tax to each amount. It allows viewing both the original and tax-included expense values.
+This query retrieves the expense ID, category, and amount for all expenses of trip 1, and also calculates a new field ```total_with_tax``` by adding 10% tax to each amount. It allows viewing both the original and tax-included expense values.
 
 Sample Output
 
@@ -863,7 +863,7 @@ FROM EXPENSE
 GROUP BY trip_id
 HAVING total_expenses > 100;
 ```
-This query calculates the total expenses for each trip by summing the amount from the ```EXPENSE``` table, groups the results by trip_id, and only includes trips where the total expenses exceed 100. It helps identify trips with higher spending.
+This query calculates the total expenses for each trip by summing the ```amount``` from the ```EXPENSE``` table, groups the results by ```trip_id```, and only includes trips where the total expenses exceed 100. It helps identify trips with higher spending.
 
 Sample Output
 
@@ -920,7 +920,7 @@ SELECT hotel_id, hotel_name, price_per_night
 FROM HOTEL
 WHERE hotel_name = 'Ocean Breeze Resort';
 ```
-This set of queries first displays the current nightly price for “Ocean Breeze Resort,” then updates its price_per_night to 180, and finally verifies that the price has been changed. It ensures the update is applied correctly.
+This set of queries first displays the current nightly price for “Ocean Breeze Resort,” then updates its ```price_per_night``` to 180, and finally verifies that the price has been changed. It ensures the update is applied correctly.
 
 Sample Output
 
@@ -944,7 +944,7 @@ SELECT expense_id, trip_id, category, amount, description, expense_date
 FROM EXPENSE
 WHERE expense_id = 60;
 ```
-This set of queries first displays the expense with expense_id = 60, deletes that row from the ```EXPENSE``` table, and then confirms that it has been removed. It ensures the deletion is intentional and successful.
+This set of queries first displays the expense with ```expense_id = 60```, deletes that row from the ```EXPENSE``` table, and then confirms that it has been removed. It ensures the deletion is intentional and successful.
 
 Sample Output
 
@@ -966,7 +966,7 @@ SELECT *
 FROM trip_summary
 ORDER BY trip_id;
 ```
-This query creates a view named trip_summary that shows each trip’s ID, name, associated hotel, and the average expense for that trip. The second query retrieves all records from the view, ordered by trip_id, for easy reference.
+This query creates a view named ```trip_summary``` that shows each trip’s ID, name, associated hotel, and the average expense for that trip. The second query retrieves all records from the view, ordered by ```trip_id```, for easy reference.
 
 Sample Output
 
