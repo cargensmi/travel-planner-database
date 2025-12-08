@@ -1011,8 +1011,9 @@ Sample GoogleSheets PieChart
 <img width="604" height="375" alt="piechart" src="https://github.com/user-attachments/assets/c6860985-49d8-4525-b24f-fbf5c0c07a21" />
 
 
-Sample Access Report 
----insert report---
+Sample PowerBI Table Report 
+<img width="185" height="454" alt="table_report" src="https://github.com/user-attachments/assets/c01fabc0-59b0-4504-a3ca-b365815c0ef2" />
+
 
 ### Delete Tables
 ```sql
