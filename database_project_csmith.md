@@ -1005,6 +1005,7 @@ SELECT hotel_id, hotel_name, price_per_night
 FROM HOTEL
 WHERE hotel_name IN ('Ocean Breeze Resort', 'Midtown Conference Hotel');
 ```
+This set of queries demonstrates a transaction by temporarily updating the nightly prices of two hotels, checking the changes, and then using ROLLBACK to undo them. It confirms that the original prices are restored, illustrating safe testing of updates.
 
 Sample Output
 
