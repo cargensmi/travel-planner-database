@@ -943,6 +943,11 @@ FROM TRIP T
 INNER JOIN HOTEL H ON T.trip_id = H.trip_id
 INNER JOIN EXPENSE E ON T.trip_id = E.trip_id
 GROUP BY T.trip_id, H.hotel_name;
+
+-- Use the view
+SELECT *
+FROM trip_summary
+ORDER BY trip_id;
 ```
 
 ## Query 10
