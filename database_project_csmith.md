@@ -834,6 +834,7 @@ SELECT expense_id, category, amount, amount * 1.10 AS total_with_tax
 FROM EXPENSE
 WHERE trip_id = 1;
 ```
+This query retrieves the expense ID, category, and amount for all expenses of trip 1, and also calculates a new field total_with_tax by adding 10% tax to each amount. It allows viewing both the original and tax-included expense values.
 
 Sample Output
 
