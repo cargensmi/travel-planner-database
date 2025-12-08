@@ -1050,4 +1050,4 @@ SHOW TABLES;
 ```
 
 ### Poster and Presentation
----insert poster and presentation---
+[Link to Poster](https://github.com/cargensmi/travel-planner-database/blob/main/TravelDB_Poster_CSmith(pdf).pdf)
