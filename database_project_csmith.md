@@ -848,7 +848,7 @@ SELECT trip_name, start_date, MONTH(start_date) AS month_number
 FROM TRIP
 WHERE destination = 'New York';
 ```
-This query retrieves the trip name and start date for trips with the destination “New York” and uses the MONTH() function to display the numeric month of each trip’s start date. It helps identify when New York trips occur within the year.
+This query retrieves the trip name and start date for trips with the destination “New York” and uses the ```MONTH()``` function to display the numeric month of each trip’s start date. It helps identify when New York trips occur within the year.
 
 Sample Output
 
@@ -863,7 +863,7 @@ FROM EXPENSE
 GROUP BY trip_id
 HAVING total_expenses > 100;
 ```
-This query calculates the total expenses for each trip by summing the amount from the EXPENSE table, groups the results by trip_id, and only includes trips where the total expenses exceed 100. It helps identify trips with higher spending.
+This query calculates the total expenses for each trip by summing the amount from the ```EXPENSE``` table, groups the results by trip_id, and only includes trips where the total expenses exceed 100. It helps identify trips with higher spending.
 
 Sample Output
 
@@ -880,7 +880,7 @@ INNER JOIN EXPENSE E ON T.trip_id = E.trip_id
 GROUP BY T.trip_name, H.hotel_name
 LIMIT 5;
 ```
-This query joins the TRIP, HOTEL, and EXPENSE tables to show each trip’s name, associated hotel, and the total expenses for that trip. It groups the results by trip and hotel and limits the output to the first five rows.
+This query joins the ```TRIP```, ```HOTEL```, and ```EXPENSE``` tables to show each trip’s name, associated hotel, and the total expenses for that trip. It groups the results by trip and hotel and limits the output to the first five rows.
 
 Sample Output
 
@@ -895,7 +895,7 @@ FROM TRIP T
 LEFT JOIN FAVORITE F ON T.trip_id = F.trip_id
 WHERE T.trip_id = 3;
 ```
-This query retrieves the trip name, favorite item type, and rating for trip 3, including all trips even if they have no corresponding entries in the FAVORITE table. It ensures that trips without favorites still appear in the results.
+This query retrieves the trip name, favorite item type, and rating for trip 3, including all trips even if they have no corresponding entries in the ```FAVORITE``` table. It ensures that trips without favorites still appear in the results.
 
 Sample Output
 
@@ -944,7 +944,7 @@ SELECT expense_id, trip_id, category, amount, description, expense_date
 FROM EXPENSE
 WHERE expense_id = 60;
 ```
-This set of queries first displays the expense with expense_id = 60, deletes that row from the EXPENSE table, and then confirms that it has been removed. It ensures the deletion is intentional and successful.
+This set of queries first displays the expense with expense_id = 60, deletes that row from the ```EXPENSE``` table, and then confirms that it has been removed. It ensures the deletion is intentional and successful.
 
 Sample Output
 
@@ -1005,7 +1005,7 @@ SELECT hotel_id, hotel_name, price_per_night
 FROM HOTEL
 WHERE hotel_name IN ('Ocean Breeze Resort', 'Midtown Conference Hotel');
 ```
-This set of queries demonstrates a transaction by temporarily updating the nightly prices of two hotels, checking the changes, and then using ROLLBACK to undo them. It confirms that the original prices are restored, illustrating safe testing of updates.
+This set of queries demonstrates a transaction by temporarily updating the nightly prices of two hotels, checking the changes, and then using ```ROLLBACK``` to undo them. It confirms that the original prices are restored, illustrating safe testing of updates.
 
 Sample Output
 
