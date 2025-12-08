@@ -822,7 +822,7 @@ FROM TRIP
 ORDER BY start_date ASC, trip_name ASC;
 ```
 Sample Output
-![Query 1](query1.md)
+<img width="579" height="420" alt="query1" src="https://github.com/user-attachments/assets/335490db-23c7-4fac-ac8c-1aee3bd2c982" />
 
 ## Query 2
 ```sql
