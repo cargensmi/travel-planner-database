@@ -863,6 +863,7 @@ FROM EXPENSE
 GROUP BY trip_id
 HAVING total_expenses > 100;
 ```
+This query calculates the total expenses for each trip by summing the amount from the EXPENSE table, groups the results by trip_id, and only includes trips where the total expenses exceed 100. It helps identify trips with higher spending.
 
 Sample Output
 
