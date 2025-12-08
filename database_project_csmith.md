@@ -1004,13 +1004,13 @@ Sample Output
 
 ### Reports
 
----insert report---
-
 Sample GoogleSheets PieChart
 
 <img width="604" height="375" alt="piechart" src="https://github.com/user-attachments/assets/c6860985-49d8-4525-b24f-fbf5c0c07a21" />
 
 [Link to PieChart](https://github.com/cargensmi/travel-planner-database/blob/main/piechart.png)
+
+For the pie chart, I used Google Sheets. It shows the percentage of each category in the favorites table. This is a great visual for the user to see which category has had the most enjoyable experiences. I used the aggregation tool in Google Sheets to add up the number of items per category. 
 
 Sample PowerBI Table Report 
 
@@ -1018,6 +1018,7 @@ Sample PowerBI Table Report
 
 [Link to Table](https://github.com/cargensmi/travel-planner-database/blob/main/table_report.png)
 
+For the table report, I used Power BI. It shows the total cost of all of the activities on a given day. It is helpful in seeing which days on the trip the user might have spent more, and by how much (as it pertains solely to activity costs). Not all rows are included in this screen-capture, as the table spans an entire calendar year. 
 
 
 ### Delete Tables
