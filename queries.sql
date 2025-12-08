@@ -34,9 +34,20 @@ LEFT JOIN FAVORITE F ON T.trip_id = F.trip_id
 WHERE T.trip_id = 3;
 
 -- Query 7: UPDATE query
-UPDATE HOTEL
-SET price_per_night = 180
-WHERE hotel_name = 'Ocean Breeze Resort';
+-- Check current status
+SELECT pid, name, status
+FROM project
+WHERE pid = 2;
+
+-- Perform the update
+UPDATE project
+SET status = 'A'
+WHERE pid = 2;
+
+-- Verify the change
+SELECT pid, name, status
+FROM project
+WHERE pid = 2;
 
 -- Query 8: DELETE query
 DELETE FROM EXPENSE
