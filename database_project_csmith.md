@@ -821,6 +821,7 @@ SELECT trip_id, trip_name, destination, start_date
 FROM TRIP
 ORDER BY start_date ASC, trip_name ASC;
 ```
+This query retrieves the trip ID, name, destination, and start date for all trips and sorts the results first by start_date in ascending order, and then by trip_name in ascending order for trips with the same start date. It helps display trips chronologically and alphabetically.
 
 Sample Output
 
