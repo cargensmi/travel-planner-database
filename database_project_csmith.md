@@ -872,6 +872,10 @@ GROUP BY T.trip_name, H.hotel_name
 LIMIT 5;
 ```
 
+Sample Output
+<img width="638" height="251" alt="query5" src="https://github.com/user-attachments/assets/061dbc9a-9f87-4bd7-81aa-6c6a7d2fd950" />
+
+
 ## Query 6
 ```sql
 -- Query 6: LEFT JOIN
