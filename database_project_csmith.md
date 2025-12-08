@@ -1016,7 +1016,7 @@ Sample PowerBI Table Report
 
 <img width="148" height="456" alt="table_report" src="https://github.com/user-attachments/assets/30565292-f060-4e67-be4a-a8b4a315601f" />
 
-[Link to Table]((https://github.com/cargensmi/travel-planner-database/blob/main/piechart.png))
+[Link to Table](https://github.com/cargensmi/travel-planner-database/blob/main/piechart.png)
 
 
 
