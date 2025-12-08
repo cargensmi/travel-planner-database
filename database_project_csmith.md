@@ -892,20 +892,20 @@ Sample Output
 ## Query 7
 ```sql
 -- Query 7: UPDATE query
--- Check current status
-SELECT pid, name, status
-FROM project
-WHERE pid = 2;
+-- Check current price
+SELECT hotel_id, hotel_name, price_per_night
+FROM HOTEL
+WHERE hotel_name = 'Ocean Breeze Resort';
 
 -- Perform the update
-UPDATE project
-SET status = 'A'
-WHERE pid = 2;
+UPDATE HOTEL
+SET price_per_night = 180
+WHERE hotel_name = 'Ocean Breeze Resort';
 
 -- Verify the change
-SELECT pid, name, status
-FROM project
-WHERE pid = 2;
+SELECT hotel_id, hotel_name, price_per_night
+FROM HOTEL
+WHERE hotel_name = 'Ocean Breeze Resort';
 ```
 
 Sample Output
