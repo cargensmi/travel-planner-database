@@ -916,7 +916,7 @@ Sample Output
 ```sql
 -- Query 8: DELETE query
 -- Show the expense we plan to delete
-SELECT expense_id, trip_id, item_type, item_id, amount
+SELECT expense_id, trip_id, category, amount, description, expense_date
 FROM EXPENSE
 WHERE expense_id = 60;
 
@@ -925,7 +925,7 @@ DELETE FROM EXPENSE
 WHERE expense_id = 60;
 
 -- Confirm it is gone
-SELECT expense_id, trip_id, item_type, item_id, amount
+SELECT expense_id, trip_id, category, amount, description, expense_date
 FROM EXPENSE
 WHERE expense_id = 60;
 ```
