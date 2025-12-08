@@ -821,6 +821,8 @@ SELECT trip_id, trip_name, destination, start_date
 FROM TRIP
 ORDER BY start_date ASC, trip_name ASC;
 ```
+Sample Output
+![Query 1](query1.md)
 
 ## Query 2
 ```sql
