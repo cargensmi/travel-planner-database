@@ -1010,10 +1010,14 @@ Sample GoogleSheets PieChart
 
 <img width="604" height="375" alt="piechart" src="https://github.com/user-attachments/assets/c6860985-49d8-4525-b24f-fbf5c0c07a21" />
 
+[Link to PieChart]([URL](https://github.com/cargensmi/travel-planner-database/blob/main/table_report.png))
 
 Sample PowerBI Table Report 
 
-<img width="185" height="454" alt="table_report" src="https://github.com/user-attachments/assets/c01fabc0-59b0-4504-a3ca-b365815c0ef2" />
+<img width="148" height="456" alt="table_report" src="https://github.com/user-attachments/assets/30565292-f060-4e67-be4a-a8b4a315601f" />
+
+[Link to Table]([URL](https://github.com/cargensmi/travel-planner-database/blob/main/piechart.png))
+
 
 
 ### Delete Tables
