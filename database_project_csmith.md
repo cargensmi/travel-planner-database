@@ -848,6 +848,7 @@ SELECT trip_name, start_date, MONTH(start_date) AS month_number
 FROM TRIP
 WHERE destination = 'New York';
 ```
+This query retrieves the trip name and start date for trips with the destination “New York” and uses the MONTH() function to display the numeric month of each trip’s start date. It helps identify when New York trips occur within the year.
 
 Sample Output
 
