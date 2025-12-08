@@ -987,7 +987,9 @@ FROM HOTEL
 WHERE hotel_name IN ('Ocean Breeze Resort', 'Midtown Conference Hotel');
 ```
 
-### Sample Output
+Sample Output
+<img width="652" height="711" alt="query10" src="https://github.com/user-attachments/assets/d42fa19f-b0aa-45d5-ae20-f94aac6b6333" />
+
 
 ---insert sample output---
 
