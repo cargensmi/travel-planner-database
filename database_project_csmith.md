@@ -966,6 +966,7 @@ SELECT *
 FROM trip_summary
 ORDER BY trip_id;
 ```
+This query creates a view named trip_summary that shows each trip’s ID, name, associated hotel, and the average expense for that trip. The second query retrieves all records from the view, ordered by trip_id, for easy reference.
 
 Sample Output
 
