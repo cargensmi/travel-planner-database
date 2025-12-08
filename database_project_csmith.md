@@ -880,6 +880,7 @@ INNER JOIN EXPENSE E ON T.trip_id = E.trip_id
 GROUP BY T.trip_name, H.hotel_name
 LIMIT 5;
 ```
+This query joins the TRIP, HOTEL, and EXPENSE tables to show each trip’s name, associated hotel, and the total expenses for that trip. It groups the results by trip and hotel and limits the output to the first five rows.
 
 Sample Output
 
