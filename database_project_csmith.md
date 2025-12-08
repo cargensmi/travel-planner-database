@@ -844,6 +844,10 @@ FROM TRIP
 WHERE destination = 'New York';
 ```
 
+Sample Output
+<img width="618" height="151" alt="query3" src="https://github.com/user-attachments/assets/7048f9c6-14ad-43ed-9761-907ab2cda71d" />
+
+
 ## Query 4
 ```sql
 -- Query 4: Aggregation with GROUP BY and HAVING
