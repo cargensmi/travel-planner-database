@@ -832,6 +832,10 @@ FROM EXPENSE
 WHERE trip_id = 1;
 ```
 
+Sample Output
+<img width="676" height="193" alt="query2" src="https://github.com/user-attachments/assets/6103a868-cc97-43c8-bd48-522cd2287b2a" />
+
+
 ## Query 3
 ```sql
 -- Query 3: SELECT using a MariaDB function
