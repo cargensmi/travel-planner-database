@@ -857,6 +857,10 @@ GROUP BY trip_id
 HAVING total_expenses > 100;
 ```
 
+Sample Output
+<img width="516" height="235" alt="query4" src="https://github.com/user-attachments/assets/1f27c9bd-439e-4684-b1e0-cf78e1874703" />
+
+
 ## Query 5
 ```sql
 -- Query 5: Join of three tables
