@@ -944,6 +944,7 @@ SELECT expense_id, trip_id, category, amount, description, expense_date
 FROM EXPENSE
 WHERE expense_id = 60;
 ```
+This set of queries first displays the expense with expense_id = 60, deletes that row from the EXPENSE table, and then confirms that it has been removed. It ensures the deletion is intentional and successful.
 
 Sample Output
 
