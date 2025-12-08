@@ -821,7 +821,9 @@ SELECT trip_id, trip_name, destination, start_date
 FROM TRIP
 ORDER BY start_date ASC, trip_name ASC;
 ```
+
 Sample Output
+
 <img width="579" height="420" alt="query1" src="https://github.com/user-attachments/assets/335490db-23c7-4fac-ac8c-1aee3bd2c982" />
 
 ## Query 2
@@ -833,6 +835,7 @@ WHERE trip_id = 1;
 ```
 
 Sample Output
+
 <img width="676" height="193" alt="query2" src="https://github.com/user-attachments/assets/6103a868-cc97-43c8-bd48-522cd2287b2a" />
 
 
@@ -845,6 +848,7 @@ WHERE destination = 'New York';
 ```
 
 Sample Output
+
 <img width="618" height="151" alt="query3" src="https://github.com/user-attachments/assets/7048f9c6-14ad-43ed-9761-907ab2cda71d" />
 
 
@@ -858,6 +862,7 @@ HAVING total_expenses > 100;
 ```
 
 Sample Output
+
 <img width="516" height="235" alt="query4" src="https://github.com/user-attachments/assets/1f27c9bd-439e-4684-b1e0-cf78e1874703" />
 
 
@@ -873,6 +878,7 @@ LIMIT 5;
 ```
 
 Sample Output
+
 <img width="638" height="251" alt="query5" src="https://github.com/user-attachments/assets/061dbc9a-9f87-4bd7-81aa-6c6a7d2fd950" />
 
 
@@ -886,6 +892,7 @@ WHERE T.trip_id = 3;
 ```
 
 Sample Output
+
 <img width="460" height="205" alt="query6" src="https://github.com/user-attachments/assets/4309e948-db42-43cf-9bee-4dc29d7fcc37" />
 
 
@@ -909,6 +916,7 @@ WHERE hotel_name = 'Ocean Breeze Resort';
 ```
 
 Sample Output
+
 <img width="560" height="406" alt="query7" src="https://github.com/user-attachments/assets/5da8895d-5f83-48d2-9705-98e459a7ce0b" />
 
 
@@ -931,6 +939,7 @@ WHERE expense_id = 60;
 ```
 
 Sample Output
+
 <img width="661" height="252" alt="query8" src="https://github.com/user-attachments/assets/e0f2772e-59d9-4726-8e4c-1b1afe411e04" />
 
 
@@ -951,6 +960,7 @@ ORDER BY trip_id;
 ```
 
 Sample Output
+
 <img width="624" height="710" alt="query9" src="https://github.com/user-attachments/assets/cb10e522-c8de-42ad-b43a-1a4e18da618b" />
 
 
@@ -988,16 +998,16 @@ WHERE hotel_name IN ('Ocean Breeze Resort', 'Midtown Conference Hotel');
 ```
 
 Sample Output
+
 <img width="652" height="711" alt="query10" src="https://github.com/user-attachments/assets/d42fa19f-b0aa-45d5-ae20-f94aac6b6333" />
 
-
----insert sample output---
 
 ### Reports
 
 ---insert report---
 
 Sample GoogleSheets PieChart
+
 <img width="604" height="375" alt="piechart" src="https://github.com/user-attachments/assets/c6860985-49d8-4525-b24f-fbf5c0c07a21" />
 
 
