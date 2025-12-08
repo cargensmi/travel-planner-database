@@ -920,6 +920,7 @@ SELECT hotel_id, hotel_name, price_per_night
 FROM HOTEL
 WHERE hotel_name = 'Ocean Breeze Resort';
 ```
+This set of queries first displays the current nightly price for “Ocean Breeze Resort,” then updates its price_per_night to 180, and finally verifies that the price has been changed. It ensures the update is applied correctly.
 
 Sample Output
 
