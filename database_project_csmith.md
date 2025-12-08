@@ -4,7 +4,7 @@
 
 ### Project Overview
 
-The user of this database would be someone interested in taking a recreational trip. The system is helpful in managing expenses, flight itineraries, scheduled activities, and hotel stays. It is best used for keeping separate trips organized, and helping the user stay aware of money spending to prevent exceeding their self-allotted budget. The hope is that the efficiency of the database helps make traveling informative, and stress-free. 
+The user of this database would be someone interested in taking a recreational trip. The system is helpful in managing expenses, flight itineraries, scheduled activities, and hotel stays. It is best used for keeping separate trips organized, and helping the user stay aware of money spending to prevent exceeding their self-allotted budget. The hope is that the efficiency of the database helps make traveling informative, and stress-free.  
 For anyone who has ever taken a trip before, they know that information can often get lost in confirmation emails, digital receipts, and various apps. This database should eliminate the stress of trying to find scattered information while traveling, and instead place it all in one location so that the user can enjoy their vacation in a leisurely manner. It also gets rid of the awkward hassle of telling the receptionist at various welcome desks that they need a moment to find their travel confirmation details.
 
 ### Users View
