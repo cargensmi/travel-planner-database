@@ -892,10 +892,26 @@ Sample Output
 ## Query 7
 ```sql
 -- Query 7: UPDATE query
-UPDATE HOTEL
-SET price_per_night = 180
-WHERE hotel_name = 'Ocean Breeze Resort';
+-- Check current status
+SELECT pid, name, status
+FROM project
+WHERE pid = 2;
+
+-- Perform the update
+UPDATE project
+SET status = 'A'
+WHERE pid = 2;
+
+-- Verify the change
+SELECT pid, name, status
+FROM project
+WHERE pid = 2;
 ```
+
+Sample Output
+<img width="560" height="406" alt="query7" src="https://github.com/user-attachments/assets/5da8895d-5f83-48d2-9705-98e459a7ce0b" />
+
+
 ## Query 8
 ```sql
 -- Query 8: DELETE query
