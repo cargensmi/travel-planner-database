@@ -950,6 +950,10 @@ FROM trip_summary
 ORDER BY trip_id;
 ```
 
+Sample Output
+<img width="624" height="710" alt="query9" src="https://github.com/user-attachments/assets/cb10e522-c8de-42ad-b43a-1a4e18da618b" />
+
+
 ## Query 10
 ```sql
 -- Query 10: Transaction with ROLLBACK
