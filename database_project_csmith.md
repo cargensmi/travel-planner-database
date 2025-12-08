@@ -895,6 +895,7 @@ FROM TRIP T
 LEFT JOIN FAVORITE F ON T.trip_id = F.trip_id
 WHERE T.trip_id = 3;
 ```
+This query retrieves the trip name, favorite item type, and rating for trip 3, including all trips even if they have no corresponding entries in the FAVORITE table. It ensures that trips without favorites still appear in the results.
 
 Sample Output
 
