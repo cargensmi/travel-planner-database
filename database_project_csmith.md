@@ -930,6 +930,10 @@ FROM EXPENSE
 WHERE expense_id = 60;
 ```
 
+Sample Output
+<img width="661" height="252" alt="query8" src="https://github.com/user-attachments/assets/e0f2772e-59d9-4726-8e4c-1b1afe411e04" />
+
+
 ## Query 9
 ```sql
 -- Query 9: Create a View
