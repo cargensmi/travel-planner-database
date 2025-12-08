@@ -885,6 +885,10 @@ LEFT JOIN FAVORITE F ON T.trip_id = F.trip_id
 WHERE T.trip_id = 3;
 ```
 
+Sample Output
+<img width="460" height="205" alt="query6" src="https://github.com/user-attachments/assets/4309e948-db42-43cf-9bee-4dc29d7fcc37" />
+
+
 ## Query 7
 ```sql
 -- Query 7: UPDATE query
