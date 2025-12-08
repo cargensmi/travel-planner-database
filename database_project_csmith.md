@@ -957,10 +957,34 @@ Sample Output
 ## Query 10
 ```sql
 -- Query 10: Transaction with ROLLBACK
+-- Check original prices
+SELECT hotel_id, hotel_name, price_per_night
+FROM HOTEL
+WHERE hotel_name IN ('Ocean Breeze Resort', 'Midtown Conference Hotel');
+
 START TRANSACTION;
-UPDATE HOTEL SET price_per_night = 200 WHERE hotel_name = 'Ocean Breeze Resort';
-UPDATE HOTEL SET price_per_night = 190 WHERE hotel_name = 'Midtown Conference Hotel';
+
+-- Temporarily change the prices
+UPDATE HOTEL
+SET price_per_night = 200
+WHERE hotel_name = 'Ocean Breeze Resort';
+
+UPDATE HOTEL
+SET price_per_night = 190
+WHERE hotel_name = 'Midtown Conference Hotel';
+
+-- See the changed values inside the transaction
+SELECT hotel_id, hotel_name, price_per_night
+FROM HOTEL
+WHERE hotel_name IN ('Ocean Breeze Resort', 'Midtown Conference Hotel');
+
+-- Decide to undo the changes
 ROLLBACK;
+
+-- Confirm the prices are back to the original values
+SELECT hotel_id, hotel_name, price_per_night
+FROM HOTEL
+WHERE hotel_name IN ('Ocean Breeze Resort', 'Midtown Conference Hotel');
 ```
 
 ### Sample Output
