@@ -997,8 +997,9 @@ Sample Output
 
 ---insert report---
 
-Sample Excel Chart
----insert chart---
+Sample GoogleSheets PieChart
+<img width="604" height="375" alt="piechart" src="https://github.com/user-attachments/assets/c6860985-49d8-4525-b24f-fbf5c0c07a21" />
+
 
 Sample Access Report 
 ---insert report---
