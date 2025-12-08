@@ -1,5 +1,5 @@
 # CS415 Database Project – Travel Database
-Caroline Smith
+Caroline Smith  
 Fall 2025
 
 ## Database Summary Report
